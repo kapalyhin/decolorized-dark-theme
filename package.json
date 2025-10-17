@@ -1,0 +1,28 @@
+{
+  "name": "decolorized-dark-theme",
+  "displayName": "Decolorized Dark Theme",
+  "description": "A highly customized, high-contrast dark theme for Visual Studio Code, optimized for TypeScript and JavaScript development. This theme focuses on reducing visual noise by carefully controlling the color of syntax elements, making the code's structure and core logic stand out.",
+  "publisher": "anatoli-kapalyhin",
+  "license": "MIT",
+  "homepage": "https://github.com/kapalyhin/decolorized-dark-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kapalyhin/decolorized-dark-theme.git"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Decolorized Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/decolorized-dark-theme.json"
+      }
+    ]
+  }
+}
