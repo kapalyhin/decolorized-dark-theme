@@ -33,6 +33,19 @@ Other essential elements are styled for maximum readability against the very dar
 * **Strings & Numbers:** Pale Green (`#C3E88D`)
 * **Comments:** Pale Violet (`#C792EA`)
 
+## 📸 Screenshots
+
+Here are a few examples of the Decolorized Dark Theme in action, showcasing the clarity of declarations versus the minimal visual noise of usage and punctuation.
+
+### TypeScript Main Example
+![Decolorization](images/1.png)
+
+![Decolorization](images/2.png)
+
+![Decolorization](images/3.png)
+
+![Decolorization](images/4.png)
+
 ## 💻 Installation
 
 1.  Open **Extensions** sidebar in VS Code. (`Ctrl+Shift+X` or `Cmd+Shift+X`)

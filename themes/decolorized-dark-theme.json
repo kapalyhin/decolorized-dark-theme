@@ -1,23 +1,14 @@
 {
     "name": "my-first-dark-theme-customized",
     "colors": {
-        // Main editor background color
         "editor.background": "#212121",
-
-        // Default text color (retained)
         "editor.foreground": "#eeffff",
-
-        // Background color for the highlighted line (retained, if present)
         "editor.lineHighlightBackground": "#ffffff10"
-
-        // ... (other UI color settings, if any) ...
     },
     "tokenColors": [
-        // --- 1. GENERAL RULES (BASE COLORS) ---
         {
             "name": "Base Color - Set everything to white by default (except specified below)",
             "scope": [
-                // ... (general scopes list remains)
                 "meta.function-call",
                 "entity.name.function",
                 "variable.other",
@@ -36,32 +27,25 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#eeffff" // White (or very pale)
+                "foreground": "#eeffff"
             }
         },
-
-        // --- 2. AGGRESSIVE DECOLORIZATION (USAGE) (White: #eeffff) ---
         {
             "name": "Decolorization: function/method usage, properties, brackets",
             "scope": [
-                // REMOVED: "variable.other.constant.ts"
+                "meta.objectliteral.ts variable.other.constant.ts",
                 "variable.other.constant.object.property.ts",
                 "variable.other.constant.property.ts",
-
-                // VARIABLE AND PROPERTY USAGE (Broad coverage)
+                "meta.function-call variable.other.constant.ts",
+                "meta.function-call variable.other.constant",
                 "variable.other.readwrite",
                 "variable.other.property",
-                // ... (other scopes remain unchanged)
                 "variable.other.object",
                 "variable.other.member",
                 "meta.function-call variable.parameter",
-
-                // FUNCTION/METHOD CALLS
                 "meta.function-call entity.name.function",
                 "meta.method-call entity.name.function",
                 "support.function",
-
-                // BRACKETS AND PUNCTUATION
                 "punctuation.paren.open",
                 "punctuation.paren.close",
                 "punctuation.brace.open",
@@ -69,21 +53,13 @@
                 "punctuation.bracket.open",
                 "punctuation.bracket.close",
                 "punctuation.dot",
-
-                // IMPORTS
                 "variable.other.readwrite.alias",
                 "entity.name.import"
             ],
             "settings": {
-                "foreground": "#eeffff" // White
+                "foreground": "#eeffff"
             }
         },
-
-        // ------------------------------------------------------------------------------------------
-        // --- 3. COLORED DECLARATIONS (Return color for variable and parameter declarations) ---
-        // ------------------------------------------------------------------------------------------
-
-        // CLASS DECLARATION (name) -> PALE RED
         {
             "name": "Class Declaration (name)",
             "scope": [
@@ -91,11 +67,9 @@
                 "entity.name.type.module"
             ],
             "settings": {
-                "foreground": "#F07178" // Pale Red
+                "foreground": "#F07178"
             }
         },
-
-        // FUNCTION DECLARATION (name) -> PALE YELLOW
         {
             "name": "Function Declaration (name)",
             "scope": [
@@ -104,28 +78,21 @@
                 "support.function.constructor"
             ],
             "settings": {
-                "foreground": "#FFCB6B" // Pale Yellow
+                "foreground": "#FFCB6B"
             }
         },
-
-        // VARIABLE AND PARAMETER DECLARATIONS -> PALE BLUE
         {
             "name": "Variable and Parameter Declarations (name)",
             "scope": [
-                // NEW SPECIFIC SCOPE: target.ts (Context + Token)
                 "meta.definition.variable.ts variable.other.constant.ts",
-
-                // General scopes for declarations and parameters
                 "variable.other.declaration",
                 "variable.other.constant",
                 "variable.parameter"
             ],
             "settings": {
-                "foreground": "#89DDFF" // Pale Blue
+                "foreground": "#89DDFF"
             }
         },
-
-        // Comments -> PALE VIOLET
         {
             "name": "Comments",
             "scope": [
@@ -133,11 +100,9 @@
                 "punctuation.definition.comment"
             ],
             "settings": {
-                "foreground": "#C792EA" // Pale Violet
+                "foreground": "#C792EA"
             }
         },
-
-        // Strings and Numbers -> PALE GREEN
         {
             "name": "Strings and Numbers",
             "scope": [
@@ -147,7 +112,7 @@
                 "support.constant"
             ],
             "settings": {
-                "foreground": "#C3E88D" // Pale Green
+                "foreground": "#C3E88D"
             }
         }
     ]
