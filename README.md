@@ -38,13 +38,7 @@ Other essential elements are styled for maximum readability against the very dar
 Here are a few examples of the Decolorized Dark Theme in action, showcasing the clarity of declarations versus the minimal visual noise of usage and punctuation.
 
 ### TypeScript Main Example
-![Decolorization](images/1.png)
-
-![Decolorization](images/2.png)
-
-![Decolorization](images/3.png)
-
-![Decolorization](images/4.png)
+![TypeScript Main Example](images/typescript-main-example.png)
 
 ## 💻 Installation
 
